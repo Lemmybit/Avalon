@@ -1,5 +1,11 @@
 package main
 
+import "fmt"
+
 func main() {
-	println("Hello Avalon!")
+
+	player := newChar("Joe", SAMURAI, HUMAN)
+
+	fmt.Println("Welcome you Avalon!")
+	fmt.Println("You are a " + roletoText(player.role) + "!")
 }
